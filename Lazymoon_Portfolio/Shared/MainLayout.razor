@@ -1,10 +1,20 @@
 ﻿@inherits LayoutComponentBase
 
+<style>
+    body {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling:touch;
+        overflow-x: hidden;
+        -webkit-transform: translateZ(0)
+    }        
+</style>
+
 <MudThemeProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
 
 @Body
+
 
 @code {
 
