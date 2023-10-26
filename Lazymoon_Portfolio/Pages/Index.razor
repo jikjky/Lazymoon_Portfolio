@@ -30,7 +30,6 @@
         </MudContainer>
         <StikerComponent OnClick="@(()=>{System.Diagnostics.Debug.WriteLine("Click");})" Position="StikerComponent.EPosition.Bottom" Witdh="200" Height="200" Rotation="15" BaseId="Main-" Top="-80" Left="40" class="class" imgSrc="Image/lz.png" />
         <StikerComponent OnClick="@(()=>{string url = "https://github.com/jikjky"; NavigationManager.NavigateTo($"javascript:window.open('{url}','_blank')");})" Position="StikerComponent.EPosition.Bottom" Witdh="100" Height="100" Rotation="15" BaseId="Main-" Top="-100" Left="-10" class="class" imgSrc="Image/github-icon.png" />
-        <StikerComponent Position="StikerComponent.EPosition.Bottom" Rotation="15" BaseId="Main-" Top="-200" Left="-40" class="class" imgSrc="Image/star.png" />
 
     </div>
 
@@ -48,8 +47,6 @@
         <div class="index-background skew stripe" />
     </div>
     <div id="Career-">
-        <StikerComponent Position="StikerComponent.EPosition.Top" Rotation="-15" BaseId="Career-" Top="0" Left="10" class="class" imgSrc="Image/star.png"></StikerComponent>
-
         <MudContainer class="pt-16 pb-16">
             <Animation AnimationType="Component.Animation.EAnimations.FadeInDown">
                 <MudText Align="Align.Center" Class="pt-16 pb-10" Typo="Typo.h4">Career</MudText>
@@ -92,7 +89,6 @@
 <!--Enc Career-->
 <section id="@ESectionId.Enc.ToDispalyName()">
     <div id="Career-Enc">
-        <StikerComponent Position="StikerComponent.EPosition.Top" Rotation="50" BaseId="Career-Enc" Top="20" Left="-20" class="class" imgSrc="Image/star.png"></StikerComponent>
         <div class="index-project-background">
             <MudContainer class="">
                 <div class="display-flex-center">
