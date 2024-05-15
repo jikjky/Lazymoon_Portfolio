@@ -4,6 +4,7 @@ window.onReady = () => {
     showMySlides(0, "slides-database");
     showMySlides(0, "slides-web");
     showMySlides(0, "slides-mobile");
+    showMySlides(0, "slides-mobile2");
 
     function showMySlides(slideIndex, slideClassName) {
         var i;

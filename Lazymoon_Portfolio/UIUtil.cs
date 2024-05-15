@@ -25,8 +25,6 @@ namespace Lazymoon_Portfolio
             C42Seoul,
             [Display(Name = "Twosun World")]
             Twosun,
-            [Display(Name = "Technologe")]
-            Tech
         }
 
         public static string ToDispalyName(this ESectionId sectionId) => GetDispalyName(typeof(ESectionId), (int)sectionId) ?? "";

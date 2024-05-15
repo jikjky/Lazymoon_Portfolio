@@ -21,15 +21,15 @@
             </Animation>
             <Animation AnimationType="Component.Animation.EAnimations.FadeInLeft" Delay="300">
                 <MudText Typo="Typo.body1">
-                    프론트엔드 웹 개발자를 꿈꾸는 입니다.
-                    디자인을 공부하다 욕심이 생겨 개발까지 하게되었습니다. 반복적인 일을 싫어하고, 새롭고 빠른 방법으로 문제를 해결하기 위해 고민합니다.
-                    현재는 이노베이션 아카데미 42서울에서 개발을 공부중입니다. 끊임없이 성장하며 도전하는 개발자가 되고자 합니다
+
                 </MudText>
             </Animation>
             <MudSpacer />
         </MudContainer>
-        <StikerComponent OnClick="@(()=>{System.Diagnostics.Debug.WriteLine("Click");})" Position="StikerComponent.EPosition.Bottom" Witdh="200" Height="200" Rotation="15" BaseId="Main-" Top="-80" Left="40" class="class" imgSrc="Image/lz.png" />
-        <StikerComponent OnClick="@(()=>{string url = "https://github.com/jikjky"; NavigationManager.NavigateTo($"javascript:window.open('{url}','_blank')");})" Position="StikerComponent.EPosition.Bottom" Witdh="100" Height="100" Rotation="15" BaseId="Main-" Top="-100" Left="-10" class="class" imgSrc="Image/github-icon.png" />
+        <StikerComponent OnClick="@(()=>{System.Diagnostics.Debug.WriteLine("Click");})" Position="StikerComponent.EPosition.Bottom" Witdh="200" Height="200" Rotation="15" BaseId="Main-" Top="100" Left="20" class="class" imgSrc="Image/lz.png" />
+        <StikerComponent OnClick="@(()=>{string url = "https://github.com/jikjky"; NavigationManager.NavigateTo($"javascript:window.open('{url}','_blank')");})" Position="StikerComponent.EPosition.Bottom" Witdh="100" Height="100" Rotation="15" BaseId="Main-" Top="200" Left="-10" class="class" imgSrc="Image/github-icon.png" />
+        <StikerComponent OnClick="@(()=>{string url = "https://www.youtube.com/channel/UCjeyFRwDpdyev_HmiABTvGg"; NavigationManager.NavigateTo($"javascript:window.open('{url}','_blank')");})" Position="StikerComponent.EPosition.Bottom" Witdh="100" Height="100" Rotation="-5" BaseId="Main-" Top="300" Left="-20" class="class" imgSrc="Image/YouTube.png" />
+
 
     </div>
 
@@ -78,7 +78,7 @@
                         <a href="https://corp.twosun.com/">
                             <img src="Image/twosun.png" />
                             <MudText Class="pb-1" Typo="Typo.h5" Align="Align.Center">Twosun</MudText>
-                            <MudText Typo="Typo.body2" Class="" Align="Align.Center">2022.9 ~ </MudText>
+                            <MudText Typo="Typo.body2" Class="" Align="Align.Center">2022.9 ~ 2022.2</MudText>
                         </a>
                     </Animation>
                 </MudItem>
@@ -137,9 +137,20 @@
             <div class="display-flex-center">
                 <MudImage Style="margin-top: -150px;" Src="Image/42.png" />
             </div>
-            <MudText Typo="Typo.body2" Class="" Align="Align.Center">새로운것에 도전하고 싶어</MudText>
+            <MudText Typo="Typo.body1" Class="" Align="Align.Center">
+                '서버' '가상환경' '알고리즘' '파일' '입출력' '그래픽' '통신'등
+            </MudText>
+            <MudText Typo="Typo.body1" Class="" Align="Align.Center">
+                다양한 분야의 프로젝트를 진행하였고
+            </MudText>
+            <MudText Typo="Typo.body1" Class="" Align="Align.Center">
+                프로젝트를 진행하며 필요한 부분을 스스로 공부하고 문제점을 고민하고 해결하며 프로젝트를 완성하였고
+            </MudText>
+            <MudText Typo="Typo.body1" Class="" Align="Align.Center">
+                이 일련의 과정들이 자주적으로 성장할 수 있는 개발자가 되는 데 큰 도움이 되었던 교육프로그램
+            </MudText>
             <MudGrid Justify="Justify.Center">
-                <MudImage Class="rounded-lg index-42-size" Width="null" Src="Image/42/a.png" />
+                <MudImage Class="mt-3 mb-3 rounded-lg index-42-size" Width="null" Src="Image/42/a.png" />
             </MudGrid>
 
         </div>
@@ -183,7 +194,7 @@
         </div>
 
         <MudText Typo="Typo.body2" Class="" Align="Align.Center">Maui Mobile</MudText>
-        <div class="slideshow-container" oncontextmenu="return false;">
+        <div style="height:800px;" class="slideshow-container" oncontextmenu="return false;">
             <div class="Slidesbackground">
                 <div class="mySlides-3 slides-mobile fade">
                     <img src="Image/twosun/gallery_mobile1.jpg" class="slideshow-image" />
@@ -205,12 +216,20 @@
                 </div>
             </div>
         </div>
+        <div style="top:-40px;" class="slideshow-container md-3" oncontextmenu="return false;">
+            <div class="Slidesbackground">
+                <div class="mySlides-4 slides-mobile2 fade">
+                    <img src="Image/twosun/WD_1.jpg" class="slideshow-image" />
+                </div>
+                <div class="mySlides-4 slides-mobile2 fade">
+                    <img src="Image/twosun/WD_2.jpg" class="slideshow-image" />
+                </div>
+                <div class="mySlides-4 slides-mobile2 fade">
+                    <img src="Image/twosun/WD_3.jpg" class="slideshow-image" />
+                </div>
+            </div>
+        </div>
     </div>
-</section>
-<!--Tech Career-->
-<section id="@ESectionId.Tech.ToDispalyName()">
-    <MudText Typo="Typo.h3">My markdown</MudText>
-    <MudImage Src="Image/42.png" />
 </section>
 <div class="section-manager">
     @{
@@ -250,7 +269,7 @@
     {
         JavaScript.OnFindPosition += ChangeAddress;
         var timer = new System.Timers.Timer(100);
-        timer.Elapsed += (o,e)=> { OnElapsed(); };
+        timer.Elapsed += (o, e) => { OnElapsed(); };
         timer.Start();
     }
 

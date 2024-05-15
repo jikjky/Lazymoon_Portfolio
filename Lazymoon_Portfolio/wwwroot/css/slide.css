@@ -17,8 +17,6 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
 }
 
 .mySlides-2 {
@@ -28,8 +26,6 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
 }
 
 .mySlides-3 {
@@ -39,8 +35,15 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
+}
+
+.mySlides-4 {
+    border-radius: 3%;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
 }
 
 .slideshow-container {
