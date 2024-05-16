@@ -47,7 +47,7 @@
         <div class="index-background skew stripe" />
     </div>
     <div id="Career-">
-        <MudContainer class="pt-16 pb-16">
+        <MudContainer Style="padding-top: 200px;" class="pb-16">
             <Animation AnimationType="Component.Animation.EAnimations.FadeInDown">
                 <MudText Align="Align.Center" Class="pt-16 pb-10" Typo="Typo.h4">Career</MudText>
             </Animation>
@@ -55,7 +55,10 @@
                 <MudItem Class="image-logo">
                     <Animation AnimationType="Component.Animation.EAnimations.FadeInDown" Delay="300">
                         <a href="http://www.enctech.co.kr/kr/">
-                            <img src="Image/enc.png" />
+                            <div>
+                                <img class="lazy-background-icon" src="Image/job.png" />
+                                <img src="Image/enc.png" />
+                            </div>
                             <div class="text-logo">
                                 <MudText Class="pb-1" Typo="Typo.h5" Align="Align.Center">Enc Technology</MudText>
                                 <MudText Typo="Typo.body2" Class="" Align="Align.Center">2017.2 ~ 2020.4</MudText>
@@ -67,6 +70,7 @@
 
                     <Animation AnimationType="Component.Animation.EAnimations.FadeInDown" Delay="600">
                         <a href="https://42seoul.kr">
+                            <img class="lazy-background-icon" src="Image/education.png" />
                             <img src="Image/42.png" />
                             <MudText Class="pb-1" Typo="Typo.h5" Align="Align.Center">42 Seoul</MudText>
                             <MudText Typo="Typo.body2" Class="" Align="Align.Center">2020.9 ~ 2022.6</MudText>
@@ -76,6 +80,7 @@
                 <MudItem Class="image-logo">
                     <Animation AnimationType="Component.Animation.EAnimations.FadeInDown" Delay="900">
                         <a href="https://corp.twosun.com/">
+                            <img class="lazy-background-icon" src="Image/job.png" />
                             <img src="Image/twosun.png" />
                             <MudText Class="pb-1" Typo="Typo.h5" Align="Align.Center">Twosun</MudText>
                             <MudText Typo="Typo.body2" Class="" Align="Align.Center">2022.9 ~ 2022.2</MudText>
@@ -94,8 +99,8 @@
                 <div class="display-flex-center">
                     <img src="Image/enc.png" />
                 </div>
-                <MudText Typo="Typo.body1" Class="" Align="Align.Center">Display 검사/계측/평가 장비회사</MudText>
-                <MudText Typo="Typo.body2" Class="" Align="Align.Center">C++Builder/Winform/WPF/CIM/TCP/Serial/ModBus</MudText>
+                <MudText Typo="Typo.body1" Class="pb-6" Align="Align.Center">Display 검사/계측/평가 장비회사</MudText>                
+                <MudText Typo="Typo.body2" Class="" Align="Align.Center">C++Builder / Winform / WPF / CIM / TCP / Serial / ModBus</MudText>
                 <MudCarousel Class="index-carousel" TData="object">
                     <MudCarouselItem Class="pb-16" Transition="Transition.Slide" Color="@Color.Primary">
                         <div class="display-flex-center">
@@ -137,6 +142,15 @@
             <div class="display-flex-center">
                 <MudImage Style="margin-top: -150px;" Src="Image/42.png" />
             </div>
+            <MudText Typo="Typo.body1" Class="pb-6" Align="Align.Center">
+                교육생
+            </MudText>
+            <MudText Typo="Typo.body2" Class="pb-6" Align="Align.Center">
+                C / C++ / Linux
+            </MudText>
+            <MudText Typo="Typo.body1" Class="" Align="Align.Center">
+                
+            </MudText>
             <MudText Typo="Typo.body1" Class="" Align="Align.Center">
                 '서버' '가상환경' '알고리즘' '파일' '입출력' '그래픽' '통신'등
             </MudText>
@@ -162,6 +176,12 @@
         <div class="display-flex-center">
             <MudImage Src="Image/twosun.png" />
         </div>
+        <MudText Typo="Typo.body1" Class="pb-6" Align="Align.Center">
+            SW 엔지니어
+        </MudText>
+        <MudText Typo="Typo.body2" Class="pb-6" Align="Align.Center">
+            C# / MAUI / WPF / Blazor / PostgreSQL
+        </MudText>
 
         <MudText Typo="Typo.body2" Class="" Align="Align.Center">Postgress Database API</MudText>
         <div style="height:900px;" class="slideshow-container" oncontextmenu="return false;">
@@ -231,6 +251,15 @@
         </div>
     </div>
 </section>
+
+<div>
+    <a href="https://www.flaticon.com/kr/free-icons/" title="교육 아이콘">교육 아이콘 제작자: Freepik - Flaticon</a>
+</div>
+<div>
+    <a href="https://www.flaticon.com/kr/free-icons/" title="일 아이콘">일 아이콘 제작자: Eucalyp - Flaticon</a>
+</div>
+
+
 <div class="section-manager">
     @{
         foreach (ESectionId item in Enum.GetValues(typeof(ESectionId)))
